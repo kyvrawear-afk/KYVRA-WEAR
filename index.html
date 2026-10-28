@@ -244,7 +244,7 @@ chips();grid();save();
 </script>
 <script>
 /* ===== EDIT HERE: Supabase keys (Settings > API in Supabase) ===== */
-const SB_URL="PASTE_SUPABASE_URL", SB_KEY="PASTE_SUPABASE_ANON_KEY";
+const SB_URL="https://xsveutuscynvqlqgxumx.supabase.co", SB_KEY="sb_publishable_8e-CLZzXovFDP0MVRYTFSA_C8MkQKq5";
 /* ================================================================== */
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const sb=(!SB_URL.startsWith("PASTE")&&window.supabase)?supabase.createClient(SB_URL,SB_KEY):null;
