@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KYVRA WEAR – Nighty Sets & Women's Fashion | नाइटी सेट और महिलाओं के कपड़े</title>
+<meta name="description" content="KYVRA WEAR: नाइटी सेट, कुर्ती और महिलाओं के फैशन कपड़े। पूरे भारत में डिलीवरी। Order on WhatsApp.">
+<meta property="og:title" content="KYVRA WEAR">
+<meta property="og:description" content="Nighty sets and women's fashion, delivered across India.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#3B1F5E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2A1646;--plum:#3B1F5E;--rose:#D63C74;--gold:#C79A2B;--bg:#FBF8FF;--card:#fff;--line:#E7DFF2;--mut:#6B5F7E}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Hind,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+h1,h2,h3,.logo{font-family:Fraunces,Georgia,serif}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
+header{position:sticky;top:0;z-index:20;background:var(--plum);color:#fff;display:flex;align-items:center;gap:12px;padding:12px 16px}
+.logo{font-size:1.35rem;font-weight:800;letter-spacing:.04em;text-decoration:none;flex:1}
+.logo span{color:var(--gold)}
+.ib{background:none;border:0;color:#fff;font-size:1rem;padding:8px 10px;border-radius:8px;position:relative}
+.ib b{position:absolute;top:0;right:0;background:var(--rose);border-radius:99px;font-size:.7rem;min-width:18px;height:18px;line-height:18px;text-align:center}
+.hero{background:var(--plum);color:#fff;padding:44px 20px 52px;text-align:center}
+.hero h1{font-size:clamp(2rem,8vw,3.6rem);font-weight:800;line-height:1.1;max-width:14ch;margin:0 auto 14px}
+.hero p{max-width:36ch;margin:0 auto 24px;color:#E3D8F3}
+.btn{display:inline-block;background:var(--rose);color:#fff;border:0;border-radius:10px;padding:12px 24px;font-weight:600;text-decoration:none}
+.btn.alt{background:#fff;color:var(--plum)}
+.strip{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;background:var(--gold);color:#2A1646;font-weight:600;padding:10px 16px;font-size:.92rem}
+main{max-width:1100px;margin:0 auto;padding:28px 16px}
+h2{font-size:1.7rem;margin-bottom:14px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.bar input,.bar select{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;font:inherit;color:var(--ink)}
+.bar input{flex:1 1 200px}
+.chips{display:flex;gap:8px;overflow-x:auto;margin-bottom:16px;padding-bottom:4px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:99px;padding:6px 16px;white-space:nowrap}
+.chip[aria-pressed=true]{background:var(--plum);color:#fff;border-color:var(--plum)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.pic{aspect-ratio:3/4;display:flex;align-items:flex-end;padding:10px;color:#fff;font-family:Fraunces,serif;font-weight:800;font-size:1.1rem;position:relative;background-size:cover;background-position:center}
+.pic .tag{position:absolute;top:8px;left:8px;background:var(--gold);color:#2A1646;font:600 .72rem Hind;padding:2px 8px;border-radius:6px}
+.heart{position:absolute;top:6px;right:6px;background:#fff;border:0;border-radius:99px;width:34px;height:34px;color:var(--rose);font-size:1.1rem}
+.info{padding:10px 12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.info h3{font-size:1rem;font-family:Hind;font-weight:600}
+.price{font-weight:600}.price s{color:var(--mut);font-weight:400;margin-left:6px;font-size:.88rem}
+.sizes{display:flex;gap:5px;flex-wrap:wrap}
+.sizes button{border:1px solid var(--line);background:#fff;border-radius:6px;padding:2px 8px;font-size:.82rem}
+.sizes button[aria-pressed=true]{background:var(--ink);color:#fff}
+.add{margin-top:auto;width:100%}
+.empty{grid-column:1/-1;text-align:center;color:var(--mut);padding:30px}
+.info-sec{display:grid;gap:14px;margin-top:40px}
+@media(min-width:760px){.info-sec{grid-template-columns:repeat(3,1fr)}}
+.box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.box h3{margin-bottom:6px}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:8px}
+summary{font-weight:600;cursor:pointer}
+footer{background:var(--ink);color:#D9CCEE;padding:30px 16px;text-align:center;margin-top:40px;font-size:.92rem}
+footer a{margin:0 8px;color:#fff}
+.drawer{position:fixed;inset:0 0 0 auto;width:min(420px,100%);background:#fff;z-index:40;transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(0,0,0,.2)}
+.drawer.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line)}
+.db{flex:1;overflow:auto;padding:14px 16px}
+.row{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.qty button{width:26px;height:26px;border:1px solid var(--line);background:#fff;border-radius:6px}
+.df{padding:14px 16px;border-top:1px solid var(--line)}
+.df input,.df textarea{width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin-bottom:8px;font:inherit}
+.tot{display:flex;justify-content:space-between;font-weight:600;margin-bottom:8px}
+.note{font-size:.8rem;color:var(--mut);margin-top:6px}
+.scrim{position:fixed;inset:0;background:rgba(20,10,35,.5);z-index:30;display:none}.scrim.on{display:block}
+.modal{position:fixed;inset:5% 5%;max-width:640px;margin:auto;background:#fff;z-index:50;border-radius:14px;padding:22px;overflow:auto;display:none}.modal.on{display:block}
+.modal h2{margin-bottom:10px}.modal p{margin-bottom:10px}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:10px;z-index:60;display:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.modal{bottom:auto;max-height:90vh}
+.modal input,.modal select,.admin input,.admin select,.box select{width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;margin:4px 0;font:inherit;background:#fff;color:var(--ink)}
+.modal .btn{margin:4px 4px 0 0}
+.admin{position:fixed;inset:0;background:var(--bg);z-index:70;overflow:auto;padding:16px;max-width:760px;margin:0 auto}
+.ah{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:8px}
+.chip{font:inherit;color:var(--ink)}.chip[aria-pressed=true]{color:#fff}
+.toast{z-index:90}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#">KYVRA <span>WEAR</span></a>
+  <button class="ib" data-act="user" id="userBtn">Login</button>
+  <button class="ib" id="wishBtn" aria-label="Wishlist">♡ <b id="wc">0</b></button>
+  <button class="ib" id="cartBtn" aria-label="Cart">Cart <b id="cc">0</b></button>
+</header>
+
+<section class="hero">
+  <h1>Nighty sets & everyday fashion</h1>
+  <p>आरामदायक नाइटी सेट और महिलाओं के कपड़े, पूरे भारत में डिलीवरी। ऑर्डर सीधे WhatsApp पर।</p>
+  <a class="btn" href="#shop">Shop now / खरीदें</a>
+</section>
+<div class="strip"><span>Free shipping above ₹999</span><span>7-day easy returns</span><span>Order on WhatsApp</span></div>
+
+<main>
+  <h2 id="shop">Our collection / हमारा कलेक्शन</h2>
+  <div class="bar">
+    <input id="q" type="search" placeholder="Search / खोजें…" aria-label="Search products">
+    <select id="sort" aria-label="Sort">
+      <option value="">Sort / क्रम</option>
+      <option value="lo">Price: low to high</option>
+      <option value="hi">Price: high to low</option>
+      <option value="new">Newest</option>
+    </select>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+
+  <div class="info-sec">
+    <div class="box"><h3>Delivery / डिलीवरी</h3><p>Pan-India shipping in 4–8 working days. Tracking details are shared on WhatsApp.</p></div>
+    <div class="box"><h3>Returns / वापसी</h3><p>Size or defect issue? Message us within 7 days of delivery for exchange or refund.</p></div>
+    <div class="box"><h3>Support / सहायता</h3><p>WhatsApp or call <a href="tel:+917493929962">7493929962</a>, 10am–7pm.</p></div>
+  </div>
+
+  <h2 style="margin-top:40px">FAQ</h2>
+  <details><summary>How do I order? / ऑर्डर कैसे करें?</summary><p>Add items to cart, enter your address and tap “Order on WhatsApp”. We confirm the order and payment details on chat.</p></details>
+  <details><summary>Which payment methods?</summary><p>UPI and bank transfer are confirmed on WhatsApp. Cash on delivery depends on your pincode; ask us when ordering.</p></details>
+  <details><summary>Can I exchange the size?</summary><p>Yes, within 7 days if the item is unused with tags attached.</p></details>
+</main>
+
+<footer>
+  <p><b>KYVRA WEAR</b> · India</p>
+  <p style="margin:8px 0"><a href="#" data-p="ship">Shipping</a><a href="#" data-p="ret">Returns & refunds</a><a href="#" data-p="priv">Privacy</a><a href="#" data-p="terms">Terms</a></p>
+  <p>© <span id="yr"></span> KYVRA WEAR. All rights reserved.</p>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <div class="dh"><h2 id="dt" style="margin:0;font-size:1.3rem">Cart</h2><button class="ib" style="color:var(--ink)" id="closeD">Close ✕</button></div>
+  <div class="db" id="db"></div>
+  <div class="df" id="df"></div>
+</aside>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true"><button class="btn alt" style="float:right;border:1px solid var(--line)" id="closeM">Close ✕</button><div id="mc"></div></div>
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script>
+/* ===== EDIT HERE: your details and products ===== */
+const WHATSAPP = "917493929962";           // country code 91 + number
+const FREE_SHIP_ABOVE = 999, SHIP_FEE = 79;
+const CATS = ["All","Nighty sets","Kurtis","Co-ord sets"];
+/* img: put a photo path like "images/n1.jpg" to show a real photo; leave "" for colour block.
+   Prices below are SAMPLE – change them to your real prices. */
+let PRODUCTS = [
+ {id:1,name:"Floral Cotton Nighty Set",cat:"Nighty sets",price:599,mrp:899,sizes:["M","L","XL","XXL"],c:"#D63C74,#7A2A5C",img:"",tag:"Bestseller"},
+ {id:2,name:"Satin Night Suit – Wine",cat:"Nighty sets",price:749,mrp:1099,sizes:["M","L","XL"],c:"#7A1F3D,#3B1F5E",img:"",tag:"New"},
+ {id:3,name:"Printed Cotton Night Dress",cat:"Nighty sets",price:449,mrp:699,sizes:["Free size"],c:"#3E8E7E,#1F4E5F",img:""},
+ {id:4,name:"Pyjama Nighty Set – Sky",cat:"Nighty sets",price:649,mrp:949,sizes:["M","L","XL","XXL"],c:"#5B8DEF,#3B1F5E",img:""},
+ {id:5,name:"Straight Cotton Kurti",cat:"Kurtis",price:499,mrp:799,sizes:["S","M","L","XL"],c:"#C79A2B,#8A4B1F",img:"",tag:"New"},
+ {id:6,name:"Anarkali Printed Kurti",cat:"Kurtis",price:699,mrp:999,sizes:["M","L","XL"],c:"#B5446E,#2A1646",img:""},
+ {id:7,name:"Cotton Co-ord Set",cat:"Co-ord sets",price:899,mrp:1299,sizes:["S","M","L"],c:"#2A6F5B,#143D36",img:"",tag:"Bestseller"},
+ {id:8,name:"Linen Co-ord Set – Sand",cat:"Co-ord sets",price:999,mrp:1399,sizes:["S","M","L","XL"],c:"#B89A6A,#6B4E2E",img:""}
+];
+/* ================================================= */
+
+const $=s=>document.querySelector(s);
+const inr=n=>"₹"+n.toLocaleString("en-IN");
+const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let cart=store.get("kw_cart",[]), wish=store.get("kw_wish",[]), cat="All", pick={}, coupon={code:"",pct:0};
+
+function toast(m){const t=$("#toast");t.textContent=m;t.style.display="block";clearTimeout(t._t);t._t=setTimeout(()=>t.style.display="none",1800)}
+function save(){store.set("kw_cart",cart);store.set("kw_wish",wish);$("#cc").textContent=cart.reduce((a,i)=>a+i.q,0);$("#wc").textContent=wish.length}
+
+function chips(){$("#chips").innerHTML=CATS.map(c=>`<button class="chip" aria-pressed="${c===cat}" data-c="${c}">${c}</button>`).join("")}
+function grid(){
+  const q=$("#q").value.trim().toLowerCase(), s=$("#sort").value;
+  let list=PRODUCTS.filter(p=>(cat==="All"||p.cat===cat)&&p.name.toLowerCase().includes(q));
+  if(s==="lo")list.sort((a,b)=>a.price-b.price);else if(s==="hi")list.sort((a,b)=>b.price-a.price);else if(s==="new")list.sort((a,b)=>b.id-a.id);
+  $("#grid").innerHTML=list.length?list.map(p=>{
+    const [c1,c2]=p.c.split(","), sel=pick[p.id]||p.sizes[0];
+    const bg=p.img?`url('${p.img}')`:`linear-gradient(160deg,${c1},${c2})`;
+    return `<article class="card"><div class="pic" style="background-image:${bg}">${p.tag?`<span class="tag">${p.tag}</span>`:""}<button class="heart" data-w="${p.id}" aria-label="Wishlist">${wish.includes(p.id)?"♥":"♡"}</button>${p.img?"":p.cat}</div>
+    <div class="info"><h3>${p.name}</h3><div class="price">${inr(p.price)}<s>${inr(p.mrp)}</s></div>
+    <div class="sizes">${p.sizes.map(z=>`<button data-s="${p.id}|${z}" aria-pressed="${z===sel}">${z}</button>`).join("")}</div>
+    ${p.stock===0?`<button class="btn add" disabled style="opacity:.5">Sold out</button>`:`<button class="btn add" data-a="${p.id}">Add to cart</button>`}</div></article>`}).join(""):`<p class="empty">No products found / कोई प्रोडक्ट नहीं मिला।</p>`;
+}
+
+function drawer(view){
+  $("#drawer").classList.add("on");$("#scrim").classList.add("on");
+  if(view==="wish"){
+    $("#dt").textContent="Wishlist";$("#df").innerHTML="";
+    const l=PRODUCTS.filter(p=>wish.includes(p.id));
+    $("#db").innerHTML=l.length?l.map(p=>`<div class="row"><span>${p.name}<br>${inr(p.price)}</span><button class="btn" style="padding:6px 12px" data-a="${p.id}">Add</button></div>`).join(""):`<p class="empty">Wishlist is empty.</p>`;return}
+  $("#dt").textContent="Cart";
+  if(!cart.length){$("#db").innerHTML=`<p class="empty">Your cart is empty / कार्ट खाली है।</p>`;$("#df").innerHTML="";return}
+  const sub=cart.reduce((a,i)=>a+i.price*i.q,0), ship=sub>=FREE_SHIP_ABOVE?0:SHIP_FEE, disc=Math.round(sub*coupon.pct/100);
+  $("#db").innerHTML=cart.map((i,x)=>`<div class="row"><span>${i.name}<br><small>Size ${i.size} · ${inr(i.price)}</small></span><span class="qty"><button data-m="${x}">−</button> ${i.q} <button data-p="${x}">+</button></span></div>`).join("");
+  $("#df").innerHTML=`<div class="tot"><span>Subtotal</span><span>${inr(sub)}</span></div><div class="tot"><span>Shipping</span><span>${ship?inr(ship):"Free"}</span></div>${disc?`<div class="tot"><span>Discount (${esc(coupon.code)})</span><span>−${inr(disc)}</span></div>`:""}<div class="tot"><span>Total</span><span>${inr(sub-disc+ship)}</span></div>${window.couponOn?`<div style="display:flex;gap:6px"><input id="fc" placeholder="Coupon code" value="${esc(coupon.code)}" style="margin:0 0 8px"><button class="btn alt" style="border:1px solid var(--line);padding:8px 14px;margin-bottom:8px" data-act="coupon">Apply</button></div>`:""}
+  <input id="fn" placeholder="Full name / नाम" autocomplete="name"><input id="fp" placeholder="Mobile number / मोबाइल" inputmode="numeric" maxlength="10" autocomplete="tel">
+  <textarea id="fa" rows="2" placeholder="Full address with pincode / पूरा पता, पिनकोड" autocomplete="street-address"></textarea>
+  <button class="btn add" id="order">Order on WhatsApp</button><p class="note">Your order opens as a WhatsApp message to KYVRA WEAR. Payment is confirmed on chat.</p>`;
+}
+function closeAll(){$("#drawer").classList.remove("on");$("#scrim").classList.remove("on");$("#modal").classList.remove("on")}
+
+function order(){
+  if(window.preOrder&&!window.preOrder())return;
+  const n=$("#fn").value.trim(),p=$("#fp").value.trim(),a=$("#fa").value.trim();
+  if(!n||!/^[6-9]\d{9}$/.test(p)||a.length<10||!/\b\d{6}\b/.test(a)){toast("Enter name, 10-digit mobile, and address with 6-digit pincode");return}
+  const sub=cart.reduce((x,i)=>x+i.price*i.q,0), ship=sub>=FREE_SHIP_ABOVE?0:SHIP_FEE, disc=Math.round(sub*coupon.pct/100);
+  const lines=cart.map((i,k)=>`${k+1}. ${i.name} | Size ${i.size} | Qty ${i.q} | ${inr(i.price*i.q)}`).join("\n");
+  const msg=`New order – KYVRA WEAR\n\n${lines}\n\nSubtotal: ${inr(sub)}${disc?"\nDiscount ("+coupon.code+"): -"+inr(disc):""}\nShipping: ${ship?inr(ship):"Free"}\nTotal: ${inr(sub-disc+ship)}\n\nName: ${n}\nMobile: ${p}\nAddress: ${a}`;
+  window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`,"_blank","noopener");
+  if(window.onOrder)window.onOrder({name:n,phone:p,address:a,items:cart.map(i=>({...i})),subtotal:sub,shipping:ship,discount:disc,coupon:coupon.code||null,total:sub-disc+ship});
+  cart=[];coupon={code:"",pct:0};save();closeAll();toast("Order sent on WhatsApp");
+}
+
+const POL={
+ ship:["Shipping policy","<p>We ship across India. Orders are packed within 1–2 working days and delivered in 4–8 working days depending on location. Shipping is free above ₹999, otherwise ₹79. Tracking details are sent on WhatsApp once the parcel is dispatched.</p>"],
+ ret:["Returns & refunds","<p>Message us within 7 days of delivery for a size exchange, or if the item is damaged or wrong. Items must be unused with tags. Approved refunds go to the original payment method within 5–7 working days after we receive the parcel.</p>"],
+ priv:["Privacy policy","<p>We collect your name, phone number and address only to process and deliver your order. We do not sell your data. The cart and wishlist are saved in your own browser only.</p>"],
+ terms:["Terms & conditions","<p>Prices are in INR and may change without notice. An order is confirmed only after we reply on WhatsApp and payment is received. Product colours may vary slightly from photos.</p>"]
+};
+function policy(k){$("#mc").innerHTML=`<h2>${POL[k][0]}</h2>${POL[k][1]}`;$("#modal").classList.add("on");$("#scrim").classList.add("on")}
+
+document.addEventListener("click",e=>{
+  const t=e.target.closest("button,a[data-p]");if(!t)return;const d=t.dataset;
+  if(d.c){cat=d.c;chips();grid()}
+  else if(d.s){const[id,z]=d.s.split("|");pick[id]=z;grid()}
+  else if(d.w){const id=+d.w;wish=wish.includes(id)?wish.filter(x=>x!==id):[...wish,id];save();grid()}
+  else if(d.a){const p=PRODUCTS.find(x=>x.id==d.a),size=pick[p.id]||p.sizes[0],f=cart.find(i=>i.id===p.id&&i.size===size);
+    f?f.q++:cart.push({id:p.id,name:p.name,price:p.price,size,q:1});save();toast("Added to cart");if($("#dt").textContent==="Wishlist"&&$("#drawer").classList.contains("on"))drawer("wish")}
+  else if(d.m!==undefined){const i=cart[+d.m];if(--i.q<1)cart.splice(+d.m,1);save();drawer()}
+  else if(d.p!==undefined&&t.tagName==="BUTTON"||(d.p!==undefined&&t.closest(".qty"))){cart[+d.p].q++;save();drawer()}
+  else if(d.p&&t.tagName==="A"){e.preventDefault();policy(d.p)}
+  else if(t.id==="order")order();
+  else if(t.id==="cartBtn")drawer();
+  else if(t.id==="wishBtn")drawer("wish");
+  else if(t.id==="closeD"||t.id==="closeM")closeAll();
+});
+$("#scrim").onclick=closeAll;
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeAll()});
+$("#q").oninput=grid;$("#sort").onchange=grid;
+$("#yr").textContent=new Date().getFullYear();
+chips();grid();save();
+</script>
+<script>
+/* ===== EDIT HERE: Supabase keys (Settings > API in Supabase) ===== */
+const SB_URL="https://xsveutuscynvqlqgxumx.supabase.co", SB_KEY="sb_publishable_8e-CLZzXovFDP0MVRYTFSA_C8MkQKq5";
+/* ================================================================== */
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const sb=(!SB_URL.startsWith("PASTE")&&window.supabase)?supabase.createClient(SB_URL,SB_KEY):null;
+const STAFF=r=>r==="admin"||r==="founder";
+const showM=h=>{$("#mc").innerHTML=h;$("#modal").classList.add("on");$("#scrim").classList.add("on")};
+const msg=t=>{const x=$("#am");if(x)x.textContent=t};
+let me=null, atab="p", editing=null;
+
+async function loadProducts(){
+  if(!sb)return;
+  const{data,error}=await sb.from("products").select("*").eq("active",true).order("id");
+  if(error){toast("Could not load products");return}
+  const safeImg=u=>/^(https?:\/\/|images\/)[^'"()<>\s]+$/.test(u||"")?u:"";
+  PRODUCTS=data.map(p=>({id:p.id,name:esc(p.name),cat:esc(p.category),price:+p.price,mrp:+p.mrp,
+    sizes:(p.sizes||["Free size"]).map(esc),c:"#7A2A5C,#3B1F5E",img:safeImg(p.image_url),tag:esc(p.tag||""),stock:p.stock}));
+  grid();
+}
+
+async function refresh(){
+  me=null;
+  if(sb){
+    const{data:{session}}=await sb.auth.getSession();
+    if(session){
+      const{data}=await sb.from("profiles").select("*").eq("id",session.user.id).maybeSingle();
+      me=data||{id:session.user.id,email:session.user.email,full_name:"",role:"customer"};
+    }
+  }
+  $("#userBtn").textContent=me?(me.full_name||me.email.split("@")[0]).slice(0,10):"Login";
+  if(!STAFF(me&&me.role)){const a=$("#admin");if(a)a.remove()}
+}
+
+function authUI(mode){
+  const up=mode==="up";
+  showM(`<h2>${up?"Create account":"Login"}</h2>${up?'<input id="an" placeholder="Full name / नाम" autocomplete="name">':""}
+  <input id="ae" type="email" placeholder="Email" autocomplete="email">
+  <input id="ap" type="password" placeholder="Password (min 6)" autocomplete="${up?"new-password":"current-password"}">
+  <button class="btn" data-act="go" data-mode="${mode}">${up?"Sign up":"Login"}</button>
+  <p class="note"><a href="#" data-act="sw" data-mode="${up?"in":"up"}">${up?"Already have an account? Login":"New customer? Create account"}</a> · <a href="#" data-act="fg">Forgot password</a></p>
+  <p id="am" class="note"></p>`);
+}
+function accountUI(){
+  showM(`<h2>My account</h2><p>${esc(me.full_name)}<br>${esc(me.email)}<br><small>Role: ${esc(me.role)}</small></p>
+  <button class="btn" data-act="orders">My orders</button>${STAFF(me.role)?'<button class="btn" data-act="admin">Admin panel</button>':""}
+  <button class="btn alt" style="border:1px solid var(--line)" data-act="logout">Logout</button>`);
+}
+const items=o=>o.items.map(i=>`${esc(i.name)} (${esc(i.size)}) × ${+i.q}`).join("<br>");
+async function myOrders(){
+  const{data,error}=await sb.from("orders").select("*").eq("user_id",me.id).order("id",{ascending:false});
+  showM(`<h2>My orders</h2>${error?esc(error.message):(data.length?data.map(o=>`<div class="box" style="margin-bottom:10px"><b>#${o.id}</b> · ${new Date(o.created_at).toLocaleDateString("en-IN")} · <b>${esc(o.status)}</b><br>${items(o)}<br><b>${inr(+o.total)}</b>${o.tracking?`<br>Tracking: ${esc(o.tracking)}`:""}</div>`).join(""):"<p>No orders yet.</p>")}`);
+}
+
+/* ---------- Admin / Founder panel ---------- */
+async function costMap(){const{data}=await sb.from("product_costs").select("*"),m={};(data||[]).forEach(c=>m[c.product_id]=c);return m}
+const profit=(o,cm)=>+o.subtotal-(+o.discount||0)-o.items.reduce((s,i)=>s+(+(cm[i.id]||{}).cost||0)*i.q,0);
+async function shrink(f){const b=await createImageBitmap(f),s=Math.min(1,1000/Math.max(b.width,b.height)),c=document.createElement("canvas");c.width=Math.round(b.width*s);c.height=Math.round(b.height*s);c.getContext("2d").drawImage(b,0,0,c.width,c.height);return new Promise(r=>c.toBlob(r,"image/jpeg",.82))}
+async function prodTab(){
+  const{data,error}=await sb.from("products").select("*").order("id");
+  if(error)return`<p>${esc(error.message)}</p>`;
+  const cm=await costMap(),e=editing&&(editing==="new"?{}:data.find(p=>p.id==editing))||null,k=(cm[e&&e.id]||{});
+  const form=e?`<div class="box" style="margin-bottom:14px"><h3>${e.id?"Edit":"Add"} product</h3>
+  <input id="pn" placeholder="Name" value="${esc(e.name)}">
+  <select id="pc">${CATS.slice(1).map(c=>`<option ${c===e.category?"selected":""}>${c}</option>`).join("")}</select>
+  <input id="pp" type="number" placeholder="Selling price ₹" value="${esc(e.price)}">
+  <input id="pm" type="number" placeholder="MRP ₹" value="${esc(e.mrp)}">
+  <input id="pk" type="number" placeholder="Stock (pieces available)" value="${esc(e.stock)}">
+  <input id="pcost" type="number" placeholder="Your cost per piece ₹ (private)" value="${esc(k.cost)}">
+  <input id="psup" placeholder="Supplier name (private)" value="${esc(k.supplier)}">
+  <input id="ps" placeholder="Sizes, comma separated (M,L,XL)" value="${esc((e.sizes||[]).join(","))}">
+  <p class="note">Photo from phone (replaces the old photo):</p><input id="pf" type="file" accept="image/*">
+  <input id="pi" placeholder="or photo link (optional)" value="${esc(e.image_url)}">
+  <input id="pt" placeholder="Tag, e.g. New (optional)" value="${esc(e.tag)}">
+  <button class="btn" data-act="psave" data-id="${e.id||""}">Save</button> <button class="btn alt" data-act="pcancel">Cancel</button></div>`:"";
+  return`<button class="btn" data-act="pnew" style="margin-bottom:12px">+ Add product</button>${form}`+
+  (data.map(p=>`<div class="row"><span>${esc(p.name)}<br><small>${inr(+p.price)} · Stock ${p.stock} · Cost ${cm[p.id]?inr(+cm[p.id].cost):"—"} · ${p.active?"Visible":"Hidden"}</small></span>
+  <span><button class="chip" data-act="pedit" data-id="${p.id}">Edit</button> <button class="chip" data-act="ptoggle" data-id="${p.id}" data-v="${p.active}">${p.active?"Hide":"Show"}</button> <button class="chip" data-act="pdel" data-id="${p.id}">Delete</button></span></div>`).join("")||"<p>No products yet.</p>");
+}
+async function ordTab(){
+  const{data,error}=await sb.from("orders").select("*").order("id",{ascending:false}).limit(100);
+  if(error)return`<p>${esc(error.message)}</p>`;
+  const cm=await costMap();
+  return data.map(o=>{const sup=[...new Set(o.items.map(i=>(cm[i.id]||{}).supplier).filter(Boolean))].join(", ");
+  return`<div class="box" style="margin-bottom:10px"><b>#${o.id}</b> · ${new Date(o.created_at).toLocaleString("en-IN")}<br>${esc(o.name)} · <a href="tel:${esc(o.phone)}">${esc(o.phone)}</a><br>${esc(o.address)}<br>${items(o)}<br><b>${inr(+o.total)}</b>${+o.discount?` (coupon ${esc(o.coupon)}: −${inr(+o.discount)})`:""}<br><small>Supplier: ${esc(sup||"—")} · Est. profit: ${inr(profit(o,cm))}</small>
+  <select data-oid="${o.id}">${["new","confirmed","shipped","delivered","cancelled"].map(s=>`<option ${s===o.status?"selected":""}>${s}</option>`).join("")}</select>
+  <input id="ot${o.id}" placeholder="Tracking number" value="${esc(o.tracking)}"><button class="btn alt" style="border:1px solid var(--line)" data-act="osave" data-id="${o.id}">Save tracking</button></div>`}).join("")||"<p>No orders yet.</p>";
+}
+async function repTab(){
+  const[{data:os,error},cm,{data:ps}]=await Promise.all([sb.from("orders").select("*").neq("status","cancelled"),costMap(),sb.from("products").select("id,name,stock").lte("stock",3)]);
+  if(error)return`<p>${esc(error.message)}</p>`;
+  const rev=os.reduce((s,o)=>s+ +o.total,0),pr=os.reduce((s,o)=>s+profit(o,cm),0);
+  return`<div class="box"><h3>Business summary</h3><p>Orders: <b>${os.length}</b><br>Sales: <b>${inr(rev)}</b><br>Estimated profit: <b>${inr(pr)}</b></p><p class="note">Profit = item prices − discount − your product cost. Shipping and ad costs are not included. A product with no cost entered counts as cost ₹0.</p></div><div class="box" style="margin-top:10px"><h3>Low stock (3 or fewer)</h3>${(ps||[]).map(p=>`<p>${esc(p.name)} — <b>${p.stock}</b></p>`).join("")||"<p>All good.</p>"}</div>`;
+}
+async function coupTab(){
+  const{data,error}=await sb.from("coupons").select("*").order("created_at",{ascending:false});
+  if(error)return`<p>${esc(error.message)}</p>`;
+  return`<div class="box" style="margin-bottom:12px"><h3>New coupon</h3><input id="cc1" placeholder="Code, e.g. WELCOME10"><input id="cp1" type="number" placeholder="Discount % (1 to 90)"><button class="btn" data-act="csave">Add coupon</button></div>`+
+  (data.map(c=>`<div class="row"><span><b>${esc(c.code)}</b> · ${+c.percent}% · ${c.active?"Active":"Off"}</span><span><button class="chip" data-act="ctoggle" data-id="${esc(c.code)}" data-v="${c.active}">${c.active?"Turn off":"Turn on"}</button> <button class="chip" data-act="cdel" data-id="${esc(c.code)}">Delete</button></span></div>`).join("")||"<p>No coupons yet.</p>");
+}
+async function teamTab(){
+  const{data,error}=await sb.from("profiles").select("*").order("created_at");
+  if(error)return`<p>${esc(error.message)}</p>`;
+  return`<p class="note" style="margin-bottom:10px">New staff must first sign up on the website with their email. Then make them admin here.</p>`+
+  data.map(u=>`<div class="row"><span>${esc(u.full_name)} <small>${esc(u.email)}</small><br><small>${esc(u.role)}</small></span><span>${u.role==="founder"?"Founder":`<button class="chip" data-act="role" data-id="${u.id}" data-v="${u.role==="admin"?"customer":"admin"}">${u.role==="admin"?"Remove admin":"Make admin"}</button>`}</span></div>`).join("");
+}
+async function admin(tab){
+  if(!STAFF(me&&me.role))return;
+  closeAll();atab=tab||atab;
+  let el=$("#admin");
+  if(!el){document.body.insertAdjacentHTML("beforeend",'<div class="admin" id="admin"></div>');el=$("#admin")}
+  const tabs=[["p","Products"],["o","Orders"],["r","Report"],["c","Coupons"]].concat(me.role==="founder"?[["t","Team"]]:[]);
+  const body=await({p:prodTab,o:ordTab,r:repTab,c:coupTab,t:teamTab}[atab]||prodTab)();
+  el.innerHTML=`<div class="ah"><h2 style="margin:0">KYVRA WEAR admin <small>(${esc(me.role)})</small></h2><button class="btn alt" data-act="aclose">Close ✕</button></div>
+  <div class="chips">${tabs.map(t=>`<button class="chip" aria-pressed="${t[0]===atab}" data-act="tab" data-id="${t[0]}">${t[1]}</button>`).join("")}</div>${body}`;
+}
+
+document.addEventListener("click",async e=>{
+  const t=e.target.closest("[data-act]");if(!t)return;
+  e.preventDefault();
+  const a=t.dataset.act,id=t.dataset.id;
+  if(a==="user"){
+    if(!sb)return showM("<h2>Login is not set up yet</h2><p>Add the Supabase keys in index.html to turn on login (see the setup steps).</p>");
+    return me?accountUI():authUI("in");
+  }
+  if(!sb)return;
+  if(a==="sw")authUI(t.dataset.mode);
+  else if(a==="go"){
+    const em=$("#ae").value.trim(),pw=$("#ap").value,up=t.dataset.mode==="up";
+    if(!em||pw.length<6)return msg("Enter email and a password of at least 6 characters.");
+    msg("Please wait…");
+    const r=up?await sb.auth.signUp({email:em,password:pw,options:{data:{full_name:$("#an").value.trim()}}}):await sb.auth.signInWithPassword({email:em,password:pw});
+    if(r.error)return msg(r.error.message);
+    if(up&&!r.data.session)return msg("Account created. Open the confirmation email, tap the link, then login.");
+    closeAll();toast("Logged in");
+  }
+  else if(a==="fg"){
+    const em=$("#ae").value.trim();if(!em)return msg("Enter your email first.");
+    const{error}=await sb.auth.resetPasswordForEmail(em,{redirectTo:location.origin+location.pathname});
+    msg(error?error.message:"Reset link sent. Check your email.");
+  }
+  else if(a==="newpw"){
+    const{error}=await sb.auth.updateUser({password:$("#np").value});
+    if(error)return msg(error.message);closeAll();toast("Password changed");
+  }
+  else if(a==="logout"){await sb.auth.signOut();closeAll();toast("Logged out")}
+  else if(a==="orders")myOrders();
+  else if(a==="admin")admin("p");
+  else if(a==="aclose"){const x=$("#admin");if(x)x.remove()}
+  else if(a==="tab"){editing=null;admin(id)}
+  else if(a==="pnew"){editing="new";admin()}
+  else if(a==="pedit"){editing=id;admin()}
+  else if(a==="pcancel"){editing=null;admin()}
+  else if(a==="psave"){
+    const row={name:$("#pn").value.trim(),category:$("#pc").value,price:+$("#pp").value,mrp:+$("#pm").value,
+      sizes:$("#ps").value.split(",").map(s=>s.trim()).filter(Boolean),image_url:$("#pi").value.trim()||null,tag:$("#pt").value.trim()||null,stock:parseInt($("#pk").value,10)};
+    if(!row.name||!(row.price>0)||!(row.mrp>0)||!row.sizes.length)return toast("Fill name, both prices and sizes");
+    if(row.mrp<row.price)return toast("MRP must not be lower than the selling price");
+    if(!(row.stock>=0))return toast("Enter stock (0 or more)");
+    const f=$("#pf").files[0];
+    if(f){toast("Uploading photo…");
+      try{const b=await shrink(f),path=Date.now()+"-"+Math.random().toString(36).slice(2,8)+".jpg";
+        const u=await sb.storage.from("product-images").upload(path,b,{contentType:"image/jpeg"});
+        if(u.error)return toast(u.error.message);
+        row.image_url=sb.storage.from("product-images").getPublicUrl(path).data.publicUrl}catch(x){return toast("Photo upload failed")}}
+    const r=id?await sb.from("products").update(row).eq("id",id).select("id").single():await sb.from("products").insert(row).select("id").single();
+    if(r.error)return toast(r.error.message);
+    const c=await sb.from("product_costs").upsert({product_id:r.data.id,cost:+$("#pcost").value||0,supplier:$("#psup").value.trim()||null});
+    if(c.error)return toast(c.error.message);
+    editing=null;toast("Saved");await admin();loadProducts();
+  }
+  else if(a==="osave"){
+    const{error}=await sb.from("orders").update({tracking:$("#ot"+id).value.trim()||null}).eq("id",id);
+    toast(error?error.message:"Tracking saved");
+  }
+  else if(a==="coupon"){
+    const c=$("#fc").value.trim();
+    if(!c){coupon={code:"",pct:0};drawer();return}
+    const{data,error}=await sb.rpc("coupon_percent",{c});
+    if(error||!data)return toast("Invalid or expired coupon");
+    coupon={code:c.toUpperCase(),pct:data};toast(data+"% discount applied");drawer();
+  }
+  else if(a==="csave"){
+    const code=$("#cc1").value.trim().toUpperCase(),pct=parseInt($("#cp1").value,10);
+    if(!/^[A-Z0-9]{3,20}$/.test(code)||!(pct>=1&&pct<=90))return toast("Code: 3-20 letters/numbers. Discount: 1 to 90");
+    const{error}=await sb.from("coupons").insert({code,percent:pct});
+    toast(error?error.message:"Coupon added");admin("c");
+  }
+  else if(a==="ctoggle"){
+    const{error}=await sb.from("coupons").update({active:t.dataset.v!=="true"}).eq("code",id);
+    toast(error?error.message:"Updated");admin("c");
+  }
+  else if(a==="cdel"){
+    if(!confirm("Delete this coupon?"))return;
+    const{error}=await sb.from("coupons").delete().eq("code",id);
+    toast(error?error.message:"Deleted");admin("c");
+  }
+  else if(a==="ptoggle"){
+    const{error}=await sb.from("products").update({active:t.dataset.v!=="true"}).eq("id",id);
+    toast(error?error.message:"Updated");await admin();loadProducts();
+  }
+  else if(a==="pdel"){
+    if(!confirm("Delete this product permanently?"))return;
+    const{error}=await sb.from("products").delete().eq("id",id);
+    toast(error?error.message:"Deleted");await admin();loadProducts();
+  }
+  else if(a==="role"){
+    const{error}=await sb.from("profiles").update({role:t.dataset.v}).eq("id",id);
+    toast(error?error.message:"Role updated");admin("t");
+  }
+});
+document.addEventListener("change",async e=>{
+  const s=e.target.closest("[data-oid]");if(!s||!sb)return;
+  const{error}=await sb.from("orders").update({status:s.value}).eq("id",s.dataset.oid);
+  toast(error?error.message:"Status updated");if(!error)loadProducts();
+});
+
+window.onOrder=async o=>{
+  if(!sb||!me){if(sb)toast("Login next time to save your order history");return}
+  const{error}=await sb.from("orders").insert({user_id:me.id,name:o.name,phone:o.phone,address:o.address,items:o.items,subtotal:o.subtotal,shipping:o.shipping,total:o.total,discount:o.discount||0,coupon:o.coupon});
+  if(error)toast("Sent on WhatsApp but not saved: "+error.message);
+};
+
+window.couponOn=!!sb;
+window.preOrder=()=>{if(sb&&!me){toast("Please login to place your order");authUI("in");return false}return true};
+if(sb){
+  sb.auth.onAuthStateChange((ev)=>{setTimeout(async()=>{
+    await refresh();
+    if(ev==="PASSWORD_RECOVERY")showM('<h2>Set new password</h2><input id="np" type="password" placeholder="New password (min 6)"><button class="btn" data-act="newpw">Save password</button><p id="am" class="note"></p>');
+  },0)});
+  loadProducts();
+}
+</script>
+</body>
+</html>
